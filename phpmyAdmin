@@ -1,3 +1,23 @@
-#DROP table(remove table)
-DROP TABLE salary_employee 
+1.Create Database
+	CREATE DATABASE Employee
+2.Create Table
+	CREAT TABLE Employee_infomration
+3.DROP table(remove table)
+	DROP TABLE salary_employee 
+4. TO add column
+	ALTER TABLE `TABLE NAME(employee_information)` ADD `COLUMN NAME(Phone)` INT(200) NOT NULL
+5.Add some features in column in table
+	ALTER TABLE `employee_information` ADD UNIQUE(`EmployeeID`); Adding unique
 
+6. Add AUTO_INCREMENT
+	ALTER TABLE `employee_information` CHANGE `SN` `SN` INT(200) NOT NULL AUTO_INCREMENT;
+
+7. Change some feature 
+	ALTER TABLE `employee_information` CHANGE `LastName` `FirstName` VARCHAR(200) NOT NULL ;
+8. INSERT DATA into table
+	INSERT INTO `tableName` ('col1', 'col2',....'coln') VALUES('val1','val2',....'valn')
+
+9. UPDATE
+	UPDATE `employee_information` SET `EmployeeID` = 'AB125486' WHERE `employee_information`.`SN` = 1;
+10. Delete column from table
+	ALTER TABLE `employee_information` DROP `SN`
